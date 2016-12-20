@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableTableViewController: UITableViewController {
+class TableViewController: UITableViewController {
 
     struct Team {
         var category = ""
@@ -83,8 +83,24 @@ class TableTableViewController: UITableViewController {
         
     }
     
+    var teamNameSague = String()
+    var teamUrlSague = String()
+
+    // Segue Controllers  ********************************************
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //print("Got up to here-4")
+        if segue.identifier == "DetailTableViewSegue"
+        {
+            if let destinationVC = segue.destination as? DetailTableView {
+                let path = tableView.indexPathForSelectedRow
+                destinationVC.teamNameSague = String(aTeamArray[(path?.row)!].name)
+                destinationVC.teamUrlSague = String(aTeamArray[(path?.row)!].url)
+                
+            }
+        }
+    }    //     End of Segue Controllers  ********************************************
     
-    
+ 
     
     
     

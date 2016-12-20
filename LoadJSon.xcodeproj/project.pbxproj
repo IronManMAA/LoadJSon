@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02181F481E09D01100FDE243 /* DetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02181F471E09D01100FDE243 /* DetailTableView.swift */; };
 		0230C42D1E08C8B000E4E60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0230C42C1E08C8B000E4E60F /* AppDelegate.swift */; };
 		0230C4321E08C8B000E4E60F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0230C4301E08C8B000E4E60F /* Main.storyboard */; };
 		0230C4341E08C8B000E4E60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0230C4331E08C8B000E4E60F /* Assets.xcassets */; };
 		0230C4371E08C8B100E4E60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0230C4351E08C8B000E4E60F /* LaunchScreen.storyboard */; };
-		0230C43F1E08C95900E4E60F /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0230C43E1E08C95900E4E60F /* TableTableViewController.swift */; };
+		0230C43F1E08C95900E4E60F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0230C43E1E08C95900E4E60F /* TableViewController.swift */; };
 		0230C4411E08CA1E00E4E60F /* sportTeams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0230C4401E08CA1E00E4E60F /* sportTeams.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02181F471E09D01100FDE243 /* DetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableView.swift; path = ../DetailTableView.swift; sourceTree = "<group>"; };
 		0230C4291E08C8B000E4E60F /* LoadJSon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadJSon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0230C42C1E08C8B000E4E60F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0230C4311E08C8B000E4E60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0230C4331E08C8B000E4E60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0230C4361E08C8B000E4E60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0230C4381E08C8B100E4E60F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0230C43E1E08C95900E4E60F /* TableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableTableViewController.swift; path = ../TableTableViewController.swift; sourceTree = "<group>"; };
+		0230C43E1E08C95900E4E60F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
 		0230C4401E08CA1E00E4E60F /* sportTeams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sportTeams.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				0230C42C1E08C8B000E4E60F /* AppDelegate.swift */,
-				0230C43E1E08C95900E4E60F /* TableTableViewController.swift */,
+				0230C43E1E08C95900E4E60F /* TableViewController.swift */,
+				02181F471E09D01100FDE243 /* DetailTableView.swift */,
 				0230C4301E08C8B000E4E60F /* Main.storyboard */,
 				0230C4401E08CA1E00E4E60F /* sportTeams.json */,
 				0230C4331E08C8B000E4E60F /* Assets.xcassets */,
@@ -140,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0230C43F1E08C95900E4E60F /* TableTableViewController.swift in Sources */,
+				02181F481E09D01100FDE243 /* DetailTableView.swift in Sources */,
+				0230C43F1E08C95900E4E60F /* TableViewController.swift in Sources */,
 				0230C42D1E08C8B000E4E60F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				0230C43D1E08C8B100E4E60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

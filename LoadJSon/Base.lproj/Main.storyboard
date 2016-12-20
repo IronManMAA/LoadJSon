@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="wkp-xL-LWs">
             <objects>
-                <tableViewController id="QT3-Hw-Vtd" customClass="TableTableViewController" customModule="LoadJSon" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QT3-Hw-Vtd" customClass="TableViewController" customModule="LoadJSon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="H3W-HK-LPp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,21 +42,69 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="eSf-eD-lAe" kind="show" identifier="DetailTableViewSegue" id="Vwf-tV-Ph7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="QT3-Hw-Vtd" id="ZAS-Ce-OZv"/>
-                            <outlet property="delegate" destination="QT3-Hw-Vtd" id="ZIZ-Bw-m7M"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="n9N-kd-trQ"/>
-                    <connections>
-                        <outlet property="view" destination="H3W-HK-LPp" id="6b1-VW-sDX"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p44-Lu-1Db" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071.2" y="-115.59220389805098"/>
+        </scene>
+        <!--Detail Table View-->
+        <scene sceneID="xbO-ml-ZBY">
+            <objects>
+                <viewController id="eSf-eD-lAe" customClass="DetailTableView" customModule="LoadJSon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ccr-da-FaQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bbT-vj-Gqp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8uN-T3-4Kc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team Web Site URL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D42-ux-k4E">
+                                <rect key="frame" x="131" y="222" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGR-gW-5X0">
+                                <rect key="frame" x="147" y="130" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoA-Nz-JX4">
+                                <rect key="frame" x="40" y="284" width="306" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qoA-Nz-JX4" firstAttribute="centerX" secondItem="8uN-T3-4Kc" secondAttribute="centerX" id="ACP-AJ-czI"/>
+                            <constraint firstItem="D42-ux-k4E" firstAttribute="top" secondItem="cGR-gW-5X0" secondAttribute="bottom" constant="71" id="Mxk-a3-gyf"/>
+                            <constraint firstItem="cGR-gW-5X0" firstAttribute="top" secondItem="ccr-da-FaQ" secondAttribute="bottom" constant="68" id="NrD-Ba-sun"/>
+                            <constraint firstItem="qoA-Nz-JX4" firstAttribute="leading" secondItem="8uN-T3-4Kc" secondAttribute="leadingMargin" constant="5" id="Rhm-xd-k1c"/>
+                            <constraint firstItem="cGR-gW-5X0" firstAttribute="centerX" secondItem="8uN-T3-4Kc" secondAttribute="centerX" id="n5e-CF-45h"/>
+                            <constraint firstItem="qoA-Nz-JX4" firstAttribute="top" secondItem="D42-ux-k4E" secondAttribute="bottom" constant="41" id="na9-rz-RCy"/>
+                            <constraint firstItem="D42-ux-k4E" firstAttribute="centerX" secondItem="8uN-T3-4Kc" secondAttribute="centerX" id="q3r-fk-s9J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qoA-Nz-JX4" secondAttribute="trailing" constant="5" id="sc2-LD-27b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="teamName" destination="cGR-gW-5X0" id="aFe-cQ-PMh"/>
+                        <outlet property="teamUrl" destination="qoA-Nz-JX4" id="hqs-f9-Wld"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtO-h7-6Ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="-116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aNZ-91-f2l">
