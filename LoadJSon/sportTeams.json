@@ -1,0 +1,55 @@
+
+
+
+[
+	{
+		"name": "Tampa Bay Rays",
+		"url": "http://tampabay.rays.mlb.com/index.jsp?c_id=tb",
+		"category": "Sport"
+	},
+	{
+		"name": "Miami Heat",
+		"url": "http://www.nba.com/heat/gamedayhub/20161220-orlmia",
+		"category": "Sport"
+	},
+	{
+		"name": "Orlando Magic",
+		"url": "http://www.espn.com/nba/team/_/name/orl/orlando-magic",
+		"category": "Sport"
+	},
+	{
+		"name": "FC BAYERN MUNICH",
+		"url": "https://fcbayern.com/en",
+		"category": "Sport"
+	},
+	{
+		"name": "New York Giants",
+		"url": "http://www.giants.com",
+		"category": "Sport"
+	},
+	{
+		"name": "Flamengo",
+		"url": "http://www.flamengo.com.br/prehome/",
+		"category": "Sport"
+	},
+	{
+		"name": "Botafogo",
+		"url": "http://www.botafogo.com.br",
+		"category": "Sport"
+	},
+	{
+		"name": "Vasco",
+		"url": "http://www.vasco.com.br/site/",
+		"category": "Sport"
+	},
+	{
+		"name": "Gremio",
+		"url": "http://www.gremio.net",
+		"category": "Sport"
+	},
+	{
+		"name": "Barcelona",
+		"url": "https://www.fcbarcelona.com",
+		"category": "Sport"
+	}
+]
